@@ -18,8 +18,18 @@
         margin: auto;
       }
 
-      li, ul {
+      li, ul, h3 {
           list-style-type: none;
+          text-align: center;
+      }
+      
+      .block {
+        display: inline-block
+      }
+
+      .segundalinha {
+        display: inline-block;
+        
       }
 
       .second {
@@ -28,6 +38,8 @@
         height: 50px;
         text-align: center;
         width: 300px;
+        
+        
       }
 
       .third {
@@ -36,6 +48,9 @@
         height: 50px;
         text-align: center;
         width: 300px;
+        
+        
+        
       }
 
     </style>
@@ -47,25 +62,25 @@
     <section>
       <ul>
         <li class="first">1º - Equipe 1</li>
-        <li class="second">2º - Equipe 2</li>
-        <li class="third">3º - Equipe 3</li>
+        <li class="second segundalinha">2º - Equipe 2</li>
+        <li class="third segundalinha">3º - Equipe 3</li>
       </ul>
     </section>
     <section>
       <h3>Premiação Primeiro Lugar:</h3>
       <ul>
-        <li>| R$ 1000,00 por integrante da equipe |</li>
-        <li>| Bootcamp de 2 meses com possibilidade de contratação |</li>
+        <li class="block">| R$ 1000,00 por integrante da equipe |</li>
+        <li class="block">| Bootcamp de 2 meses com possibilidade de contratação |</li>
       </ul>
       <h3>Premiação Segundo Lugar:</h3>
       <ul>
-        <li>| R$ 600,00 por integrante da equipe |</li>
-        <li>| Participação no processo seletivo para o Bootcamp |</li>
+        <li class="block">| R$ 600,00 por integrante da equipe |</li>
+        <li class="block">| Participação no processo seletivo para o Bootcamp |</li>
       </ul>
       <h3>Premiação Terceiro Lugar:</h3>
       <ul>
-        <li>| R$ 300,00 por integrante da equipe |</li>
-        <li>| Participação no processo seletivo para o Bootcamp |</li>
+        <li class="block">| R$ 300,00 por integrante da equipe |</li>
+        <li class="block">| Participação no processo seletivo para o Bootcamp |</li>
       </ul>
     </section>
   </body>
