@@ -1,18 +1,24 @@
 let nota = 85;
 
-switch (nota) {
-    case >= 90:
+switch (true) {
+    case (nota >= 90 && nota <= 100):
         console.log("A");
-    case >= 80:
+        break;
+    case (nota >= 80 && nota < 90):
         console.log("B");
-    case >= 70:
+        break;
+    case (nota >= 70 && nota < 80):
         console.log("C");
-    case >= 60:
+        break;
+    case (nota >= 60 && nota < 70):
         console.log("D");
-    case >= 50:
+        break;
+    case (nota >= 50 && nota < 60):
         console.log("E");
-    case < 50:
+        break;
+    case (nota < 50):
         console.log("F");
-    case < 0 || > 100:
+        break;
+    default:
         console.log("erro: nota invalida");
 }
