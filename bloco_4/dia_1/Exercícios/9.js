@@ -1,11 +1,9 @@
-let custo = 500;
-let venda = 800;
-let custoTotal;
-let lucro;
+let a = 3;
+let b = 9;
+let c = 6;
 
-custoTotal = custo + ((custo / 100) * 20);
-lucro = venda - custoTotal;
-
-console.log(custoTotal);
-console.log(lucro);
-console.log("O lucro de 1000 produtos seria de: " + (lucro * 1000));
+if ((a % 2) != 0 || (b % 2) != 0 || (c % 2) != 0) {
+    console.log("true")
+} else {
+    console.log("false")
+}
