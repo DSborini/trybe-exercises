@@ -29,3 +29,17 @@ function createDaysOfTheMonth () {
 }
 
 createDaysOfTheMonth();
+
+function feriados(nomeBotao) {
+    const pai = document.querySelector(".buttons-container")
+    const botao = document.createElement("button");
+    const botaoID = "btn-holiday";
+
+    botao.innerHTML = nomeBotao;
+    botao.id = botaoID;
+    pai.appendChild(botao);
+    
+    
+}
+
+feriados("Feriados");
