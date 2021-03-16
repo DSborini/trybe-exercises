@@ -1,4 +1,9 @@
 const lista = document.getElementById("input-estado");
+const botaoEnvia = document.getElementById("botao-enviar");
+const botaoLimpa = document.getElementById("botao-limpar");
+const resultado = document.getElementById("resultado");
+const inputs = document.getElementsByClassName("input-value");
+const radios = document.getElementsByName("tipores");
 
 let estadosBrasil = [
     "Acre", 
@@ -43,3 +48,30 @@ function criarOpcao(estado) {
     opcao.innerText = estado;
     lista.appendChild(opcao); 
 }
+
+function criarOutput() {
+     for (let index = 0; index < inputs.length; index += 1) {
+        if (index === 6) {
+            if (radios[0].checked) {
+                criarParagrafo("Casa");
+            }
+        } else if (index === 7) {
+            if (radios[1].checked) {
+                criarParagrafo("Apartamento");
+            }
+        } else {
+            criarParagrafo(inputs[index].value);
+        }
+     }
+}
+
+function criarParagrafo(input) {
+    let paragrafo = document.createElement("p");
+    paragrafo.innerText = input;
+    resultado.appendChild(paragrafo);
+}
+
+// function getValue(filho) {
+//     let value = document.forms[0].elements[filho].value;
+//     return value;
+// }

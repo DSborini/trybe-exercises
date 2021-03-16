@@ -7,44 +7,65 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="">
+    <form action="" id="forms">
         <fieldset>
             <label for="input-nome">Nome:
-                <input type="text" id="input-nome" required maxlength="40"> </label>
+                <input type="text" id="input-nome" class="input-value" required maxlength="40"> </label>
             <br>
             <br>
             <label for="input-email">E-mail:
-                <input type="email" id="input-email" required maxlength="50"> </label>
+                <input type="email" id="input-email" class="input-value" required maxlength="50"> </label>
             <br>
             <br>
             <label for="input-cpf">CPF:
-                <input type="text" id="input-cpf" required maxlength="11"> </label>
+                <input type="text" id="input-cpf" class="input-value" required maxlength="11"> </label>
             <br>
             <br>
             <label for="input-adress">Endereço:
-                <input type="text" id="input-adress" required maxlength="200"> </label>
+                <input type="text" id="input-adress" class="input-value" required maxlength="200"> </label>
             <br>
             <br>
             <label for="input-city">Cidade:
-                <input type="text" id="input-city" required maxlength="28"> </label>
+                <input type="text" id="input-city" class="input-value" required maxlength="28"> </label>
             <br>
             <br>
             <label for="">Estado:
-                <select name="estado" id="input-estado" required></select>
+                <select name="estado" id="input-estado" class="input-value" required></select>
                     <!-- <option>São Paulo</option> -->
             </label>
             <br>
             <br>
             <label for="tipo-residencia">Tipo:
-            <label for="input-tipores" id="tipo-residencia">Casa
+            <label for="input-tipores" id="tipo-residencia" class="input-value">Casa
                 <input type="radio" id="input-tipores" name="tipores" required> </label>
-            <label for="input-tipores2">Apartamento
+            <label for="input-tipores2" class="input-value">Apartamento
                 <input type="radio" id="input-tipores2" name="tipores" required> </label>
             </label>    
         </fieldset>
+        <fieldset>
+            <p>Resumo do Currículo:</p>
+                <textarea type="text" id="input-resumo" class="input-value" required maxlength="1000" > </textarea>
+            <br>
+            <br>
+            <label for="input-cargo">Cargo:
+                <input type="text" id="input-cargo"  class="input-value" required maxlength="40"> </label>
+            <br>
+            <br>
+            <label for="input-cargodesc">Descrição do cargo:
+                <input type="text" id="input-cargodesc" class="input-value" required maxlength="500"> </label>
+            <br>
+            <br>
+            <label for="input-datainicio">Data de início:
+                <input type="text" id="input-datainicio" class="input-value" required maxlength="200"> </label>
+            <br>
+        </fieldset>
+        <div id="resultado">
+
+        </div>
+        <button id="botao-enviar">Enviar</button>
+        <button id="botao-limpar">Limpar</button>
     </form>
-
-
+    
 
 
 
