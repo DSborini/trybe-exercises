@@ -6,6 +6,8 @@ const inputs = document.getElementsByClassName("input-value");
 const radios = document.getElementsByName("tipores");
 const forms = document.getElementById("forms");
 
+
+
 let estadosBrasil = [
     "Acre", 
     "Alagoas", 

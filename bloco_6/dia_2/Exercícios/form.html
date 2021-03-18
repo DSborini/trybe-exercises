@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container1"> 
+    <form action="" id="forms" class="container2">
+        <h1 class="h1">
+            Formulário
+        </h1>
+        <fieldset class="fieldset">
+            <label for="input-nome">Nome:
+                <input type="text" id="input-nome" class="input-value input is-primary is-small" required maxlength="40"> </label>
+           
+            <label for="input-email">E-mail:
+                <input type="email" id="input-email" class="input-value input is-primary is-small" required maxlength="50"> </label>
+            
+            <label for="input-cpf">CPF:
+                <input type="text" id="input-cpf" class="input-value input is-primary is-small" required maxlength="11"> </label>
+            
+            <label for="input-adress">Endereço:
+                <input type="text" id="input-adress" class="input-value input is-primary is-small" required maxlength="200"> </label>
+            
+            <label for="input-city">Cidade:
+                <input type="text" id="input-city" class="input-value input is-primary is-small" required maxlength="28"> </label>
+            
+            <div class="estadolabel">   
+            <label for="">Estado:
+                <div class="select is-multiple is-primary is-small">
+                <select name="estado" id="input-estado" class="input-value" required></select>
+                    <!-- <option>São Paulo</option> -->
+                </div>
+            </label>
+            
+            <div class="control">
+            <label for="tipo-residencia">Tipo:
+            <label for="input-tipores" id="tipo-residencia" class="input-value">Casa
+                <input type="radio" id="input-tipores" class="radio" name="tipores" required> </label>
+            <label for="input-tipores2" class="input-value">Apartamento
+                <input type="radio" id="input-tipores2" class="radio" name="tipores" required> </label>
+            </label>   
+            </div>
+            </div>  
+        </fieldset>
+        <fieldset>
+            <p>Resumo do Currículo:</p>
+                <textarea  class="textarea is-primary" type="text" id="input-resumo" class="input-value" required maxlength="1000" > </textarea>
+            
+            <label for="input-cargo">Cargo:
+                <input type="text" id="input-cargo"  class="input-value input is-primary is-small" required maxlength="40"> </label>
+            
+            <label for="input-cargodesc">Descrição do cargo:
+                <input type="text" id="input-cargodesc" class="input-value input is-primary is-small" required maxlength="500"> </label>
+            
+            
+            <label for="input-datainicio">Data de início:
+                <input type="text" id="input-datainicio" class="input-value input is-primary is-small" required maxlength="200"> </label>
+            
+        </fieldset>
+        <div class="botoes">
+            <button id="botao-enviar" class="button is-primary">Enviar</button>
+            <button id="botao-limpar" class="button is-primary">Limpar</button>
+        </div>
+    </div> 
+        <div id="resultado">
+
+        </div>
+    </form>
+    
+
+
+
+
+
+
+
+
+
+    <script src="dist/js/DatePickerX.min.js"></script>  
+    <script src="script.js"></script>
+    
+</body>
+</html>
