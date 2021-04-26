@@ -1,0 +1,33 @@
+import logo from './logo.svg';
+import './App.css';
+
+const task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
+
+const infos = [".jsx", "Forms", "React", "Tailwind"]
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h3>React, e algumas cositas a mais!</h3>
+        {/* {task("React, e algumas cositas a mais!")} */}
+        {infos.map((info) => task(info))}
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
